@@ -1,0 +1,263 @@
+
+ /* Navbar */
+    .navbar {
+      background-color: #CDE7F7;
+    }
+    .navbar-brand span {
+      color: #065bbb;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 28px;
+    }
+    .nav-link {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: url('https://via.placeholder.com/1920x800') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero-section h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      max-width: 800px;
+      margin: 20px auto 0;
+    }
+
+
+    /* Masterclasses Section */
+    .masterclass-section {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+    }
+    .masterclass-section h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .class-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .class-card {
+      background: #9b2828;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+.download-section {
+  background: linear-gradient(90deg, #8fd3f4, #3b8d99);
+}
+
+/* Dark Blue Box for Heading */
+.download-box {
+  background-color: #0d3b66;
+  
+  text-align: center;
+}
+
+/* Phone Image Styling */
+.phone-mockup {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+
+
+
+.download-section {
+  background: linear-gradient(to right, #9dd9f3, #cde7f7); /* light blue gradient background */
+  position: relative;
+  overflow: hidden;
+}
+
+.download-box {
+  background-color: #083b72; /* dark blue bar */
+  display: inline-block;
+  padding: 20px 40px;
+ 
+
+  position: relative;
+  z-index: 1; /* text stays above bar */
+}
+
+.phone-mockup {
+  max-width: 300px;
+  position: relative;
+  z-index: 2; /* phone stays above everything */
+}
+
+.download-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100px; /* height of the dark blue bar */
+  background-color: #083b72;
+  z-index: 1;
+}
+.speakers-section {
+  padding: 40px 20px;
+}
+
+.speakers-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #193F6F;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.custom-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Stretch cards equally */
+  max-width: 70%; /* ✅ Reduced width */
+  margin: auto; /* ✅ Center the card */
+}
+
+.card-img {
+  border: 10px solid #193F6F;
+  border-radius: 50%;
+  max-width: 120px; /* Slightly bigger */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.speaker-desc {
+  font-size: 16px; /* Same size for all */
+  line-height: 1.4;
+  color: #193F6F;
+  margin-bottom: 15px;
+}
+
+.speaker-name {
+  background-color: rgb(175, 171, 171);
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Equal height for all cards in a row */
+.row > .col-md-6 {
+  display: flex;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .custom-card {
+    max-width: 100%; /* Full width on mobile */
+  }
+  .card-img {
+    max-width: 140px;
+  }
+  .speaker-desc {
+    font-size: 14px;
+  }
+}
+
+.members-container {
+  background-image: url('./sfsimg/Rectangle 23.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+}
+
+.members-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.member-col {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center; /* Centers cards horizontally */
+}
+
+.member-card {
+  background-color: #4AC7E9;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 500px; /* Reduced width */
+  width: 100%;
+}
+
+.member-img {
+  border: 10px solid #193F6F;
+  border-radius: 50%;
+  width: 130px; /* Slightly bigger image */
+  height: 130px;
+  object-fit: cover;
+}
+
+.member-content {
+  flex: 1;
+}
+
+.member-name {
+  background-color: #193F6F;
+  color: white;
+  padding: 8px 12px; /* Less padding so background is smaller */
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: inline-block; /* Makes background wrap text */
+}
+
+.member-details {
+  text-align: center;
+  font-size: 15px;
+  color: #002d4d;
+}
+
+/* Responsive: Two in a row for large, one in a row for mobile */
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .member-col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .member-card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%; /* Full width on mobile */
+  }
+}
+
