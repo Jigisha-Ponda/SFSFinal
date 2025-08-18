@@ -260,4 +260,17 @@
     max-width: 100%; /* Full width on mobile */
   }
 }
+@media (max-width: 767px) {
+  .sthe-img {
+    margin-bottom: -30px !important;
+    display: block;   /* ensures margin applies */
+  }
+}
+/* Apply negative bottom margin on mobile + tablet */
+@media (max-width: 991px) {
+  .sthe-img {
+    margin-bottom: -30px !important;
+    display: block; /* ensures margin applies */
+  }
+}
 
