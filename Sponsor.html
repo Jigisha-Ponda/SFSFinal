@@ -6,7 +6,7 @@
     <!-- <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
     </meta> -->
 
-    <title>sfs</title>
+    <title>SFS - Surgeons for Surgeons</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,15 +46,16 @@
       <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a href="index.html" class="nav-link active" style="font-family: Barlow Condensed;font-size: 25px; color: black;">Home</a></li>
-          <li class="nav-item"><a href="secondopinion.html" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px; color: black;">Second Opinion</a></li>
-          <li class="nav-item"><a href="Sponsor.html" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px; color: black;">Sponsor</a></li>
-          <li class="nav-item"><a href="#help" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px;color: black;">Trainee Surgeons</a></li>
-          <li class="nav-item"><a href="#faq" class="nav-link"style="font-family: Barlow Condensed;font-size: 25px; color: black;">About Us</a></li>
-        </ul>
-      </div>
+     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+  <ul class="navbar-nav text-center">
+    <li class="nav-item"><a href="index.html" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px;color: black;">Home</a></li>
+    <li class="nav-item"><a href="secondopinion.html" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px;color: black;">Second Opinion</a></li>
+    <li class="nav-item"><a href="Sponsor.html" class="nav-link active" style="font-family: Barlow Condensed;font-size: 25px;color: black;">Sponsor</a></li>
+    <li class="nav-item"><a href="#help" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px;color: black;">Trainee Surgeons</a></li>
+    <li class="nav-item"><a href="#faq" class="nav-link" style="font-family: Barlow Condensed;font-size: 25px;color: black;">About Us</a></li>
+  </ul>
+</div>
+
     </div>
   </nav>
 
@@ -308,7 +309,7 @@
              style="background: #1E3A8A; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
           <h5 style="margin:0; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(18px, 3vw, 24px); font-weight: 600;color: white;">
             Interested in sponsoring us? <br>
-            Please fill out the form below, and we’ll get back to you soon!
+            Please fill out the form below and we’ll get back to you soon!
           </h5>
         </div>
 
@@ -488,6 +489,17 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      // Remove active from all
+      document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+      // Add active to clicked one
+      this.classList.add('active');
+    });
+  });
+</script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

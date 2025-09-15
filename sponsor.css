@@ -1,3 +1,8 @@
+.nav-link.active {
+    color: #193f6f !important;   /* Change to your highlight color */
+    font-weight: bold;           /* Optional: make it bold */
+    border-bottom: 2px solid #193f6f; /* Optional underline effect */
+  }
 .features-section {
       padding: 60px 15px;
       text-align: center;

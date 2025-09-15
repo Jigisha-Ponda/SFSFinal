@@ -13,7 +13,11 @@
     animation: gradientAnimation 8s ease infinite;
     position: relative;
 }
-
+.nav-link.active {
+    color: #193f6f !important;   /* Change to your highlight color */
+    font-weight: bold;           /* Optional: make it bold */
+    border-bottom: 2px solid #193f6f; /* Optional underline effect */
+  }
 /* Apply blur effect only to the background */
 #one::before {
     content: "";

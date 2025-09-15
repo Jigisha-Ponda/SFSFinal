@@ -274,3 +274,16 @@
   }
 }
 
+.nav-link.active {
+    color: #193f6f !important;   /* Change to your highlight color */
+    font-weight: bold;           /* Optional: make it bold */
+    border-bottom: 2px solid #193f6f; /* Optional underline effect */
+  }
+  .btn-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
