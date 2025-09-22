@@ -150,7 +150,7 @@
   /* Stretch cards equally */
   max-width: 70%;
   /* ✅ Reduced width */
-  margin: auto;
+  margin: 0 auto;
   /* ✅ Center the card */
 }
 
@@ -160,6 +160,7 @@
   width: 130px;       
   height: 130px;      
   object-fit: cover; 
+  object-position: top center;
   margin-bottom: 15px;
 }
 
@@ -188,6 +189,7 @@
   line-height: 1.4;
   color: #193F6F;
   margin-bottom: 15px;
+  min-height: 70px;
 }
 
 .speaker-name {
