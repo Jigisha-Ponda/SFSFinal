@@ -69,6 +69,7 @@
   font-family: 'Roboto Condensed', sans-serif !important;
   font-size: 16px !important;
   font-weight: 500;
+  color: #193F6F!important;
 }
 
 .masterclass-image {
@@ -334,6 +335,10 @@
     display: block;
     /* ensures margin applies */
   }
+}
+
+.nav-link:hover{
+  color:#193f6f !important;
 }
 
 .nav-link.active {
