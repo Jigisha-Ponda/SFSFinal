@@ -179,7 +179,7 @@
     max-width: 100%; /* Full width on mobile */
   }
   .card-img {
-    max-width: 140px;
+    /* max-width: 140px; */
   }
   .speaker-desc {
     font-size: 14px;
@@ -267,6 +267,14 @@
   }
   .logo-text{
     font-size:14px!important;
+  }
+  .card-img {
+    border: 10px solid #193F6F;
+    border-radius: 50%;
+    /* max-width: 120px;  */
+    height: 110px;
+    width:auto;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px) {
