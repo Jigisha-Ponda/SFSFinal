@@ -23,9 +23,7 @@
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
-  <link 
-  rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -322,8 +320,9 @@
 
             <h4>Speciality: General Surgery <br>Title: Pearl of the joint (Ganglion) <br>Location: <em>Yangon,
                 Myanmar</em></h4>
-            <a href="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869" class="know-more-btn"
-              target="_blank">Know More</a>
+            <a href="#" class="know-more-btn" target="_blank" data-bs-toggle="modal" data-bs-target="#infoModal"
+              data-link="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869">Know
+              More</a>
           </div>
         </div>
       </div>
@@ -337,8 +336,9 @@
 
             <h4>Speciality: Upper GI Surgery <br>Title: Jejunum Diverticulum <br> Location: <em>Yangon, Myanmar</em>
             </h4>
-            <a href="https://app.surgeonsforsurgeons.com/content/68821d6376fbd48290b4a1b5" class="know-more-btn"
-              target="_blank">Know More</a>
+            <a href="#" class="know-more-btn" target="_blank" data-bs-toggle="modal" data-bs-target="#infoModal"
+              data-link="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869">Know
+              More</a>
           </div>
         </div>
       </div>
@@ -352,8 +352,9 @@
             <h4>Speciality: Oncosurgery (Cancer Surgery) <br> Title: IVC Resection and Grafting <br> Location:
               <em>Kolkata, India</em>
             </h4>
-            <a href="https://app.surgeonsforsurgeons.com/content/687fade376fbd48290b49272" class="know-more-btn"
-              target="_blank">Know More</a>
+            <a href="#" class="know-more-btn" target="_blank" data-bs-toggle="modal" data-bs-target="#infoModal"
+              data-link="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869">Know
+              More</a>
           </div>
         </div>
       </div>
@@ -367,8 +368,9 @@
             <h4>Speciality: Minimal Access Surgery <br> Title: Retrograde Laparoscopic Cholecystectomy for Gangreneous
               <br>Gallbladder Perforation <br> Location: <em>Yangon, Myanmar</em>
             </h4>
-            <a href="https://app.surgeonsforsurgeons.com/content/68714ab6a62535b99d3a951c" class="know-more-btn"
-              target="_blank">Know More</a>
+            <a href="#" class="know-more-btn" target="_blank" data-bs-toggle="modal" data-bs-target="#infoModal"
+              data-link="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869">Know
+              More</a>
           </div>
         </div>
       </div>
@@ -428,8 +430,8 @@
 
       <form action="mailto:jigishaadatiya21@gmail.com" method="post" enctype="text/plain" class="mt-4">
 
-         <!-- Name -->
-         <div class="mb-3">
+        <!-- Name -->
+        <div class="mb-3">
           <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
           <input type="text" class="form-control" name="name" id="name" placeholder="Add Name...">
         </div>
@@ -439,7 +441,7 @@
           <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
           <input type="text" class="form-control" name="Title" id="title" placeholder="Add Title...">
         </div>
-      
+
         <!-- Speciality -->
         <div class="mb-3">
           <label for="speciality" class="form-label">Speciality <span class="text-danger">*</span></label>
@@ -450,38 +452,40 @@
             <option value="Orthopedics">Orthopedics</option>
           </select>
         </div>
-      
+
         <!-- Description -->
         <div class="mb-3">
           <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
-          <textarea class="form-control" name="Description" id="description" rows="4" placeholder="Enter Description"></textarea>
+          <textarea class="form-control" name="Description" id="description" rows="4"
+            placeholder="Enter Description"></textarea>
         </div>
-      
+
         <!-- Attachments -->
         <div class="mb-3">
           <label class="form-label">Attachments <span class="text-danger">*</span></label><br>
           <input type="file" name="Attachment">
         </div>
-      
+
         <!-- Checkboxes -->
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" name="Consent" id="consent">
           <label class="form-check-label checkbox-label" for="consent">
-            I hereby confirm that patient details have been removed from the case file and/or shared with patient’s consent.
+            I hereby confirm that patient details have been removed from the case file and/or shared with patient’s
+            consent.
           </label>
         </div>
-      
+
         <div class="mb-4 form-check">
           <input type="checkbox" class="form-check-input" name="DataRelevant" id="dataRelevant">
           <label class="form-check-label checkbox-label" for="dataRelevant">
             The data entered is relevant to platform.
           </label>
         </div>
-      
+
         <!-- Upload Button -->
         <button type="submit" class="upload-btn">UPLOAD</button>
       </form>
-      
+
     </div>
 
   </div>
@@ -664,6 +668,27 @@
   <!-- Back to Top -->
   <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-3">
+        <div class="modal-header">
+          <h5 class="modal-title">Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>You have to install the app on your mobile or tablet to know more.</p>
+          <!-- Button inside modal
+          <a href="https://app.surgeonsforsurgeons.com/content/688b05d3451d937b59aa8869"
+            class="btn btn-success mt-3 open-in-app" target="_blank"> -->
+          <!-- This button will only show on mobile/tablet -->
+          <a id="modalLink" href="#" class="btn btn-primary open-app" target="_blank">Open App</a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -681,15 +706,40 @@
         this.classList.add('active');
       });
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const modalLink = document.getElementById("modalLink");
+      const buttons = document.querySelectorAll(".know-more-btn");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", function () {
+          const link = this.getAttribute("data-link");
+          modalLink.setAttribute("href", link);
+        });
+      });
+
+      // Detect device: if desktop, hide the "Open App" button
+      function checkDevice() {
+        const isMobileOrTablet = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (!isMobileOrTablet) {
+          modalLink.style.display = "none";  // hide on laptop/desktop
+        } else {
+          modalLink.style.display = "inline-block"; // show on mobile/tablet
+        }
+      }
+
+      checkDevice();
+    });
   </script>
 
-<script>
-  // Smooth scroll
-  document.querySelector('.back-to-top').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
+  <script>
+    // Smooth scroll
+    document.querySelector('.back-to-top').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
