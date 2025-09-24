@@ -102,6 +102,10 @@
   z-index: 99;
 }
 
+.back-to-top:hover i{
+  color:#193f6f!important;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -1426,6 +1430,11 @@ h2 {
   font-weight: 600;
   color: #000;
   margin-bottom: 40px;
+}
+
+.back-to-top i {
+  font-size: 1.5rem; /* make it bigger */
+  color: white;       /* visible on dark bg */
 }
 
 /* Know More button */
