@@ -428,67 +428,71 @@
 
       </form> -->
 
-      <form  netlify enctype="multipart/form-data" id="case-form" class="mt-4">
-        <!-- Name -->
-        <div class="mb-3">
-          <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="name" id="name" placeholder="Add Name...">
-        </div>
-
-        <!-- Title -->
-        <div class="mb-3">
-          <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="Title" id="title" placeholder="Add Title...">
-        </div>
-
-        <!-- Speciality -->
-        <div class="mb-3">
-          <label for="speciality" class="form-label">Speciality <span class="text-danger">*</span></label>
-          <select class="form-select" name="Speciality" id="speciality">
-            <option selected disabled>Select Speciality</option>
-            <option value="Cardiology">Cardiology</option>
-            <option value="Neurology">Neurology</option>
-            <option value="Orthopedics">Orthopedics</option>
-          </select>
-        </div>
-
-        <!-- Description -->
-        <div class="mb-3">
-          <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
-          <textarea class="form-control" name="Description" id="description" rows="4"
-            placeholder="Enter Description"></textarea>
-        </div>
-
-        <!-- Attachments -->
-        <div class="mb-3">
-          <label class="form-label">Attachments <span class="text-danger">*</span></label><br>
-          <input type="file" name="Attachment">
-        </div>
-
-        <!-- <div class="mb-3">
-          <label for="fileURL" class="form-label">File URL <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="fileURL" id="fileURL" placeholder="Paste Google Drive file URL here" required>
-        </div> -->
-
-        <!-- Checkboxes -->
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" name="Consent" id="consent">
-          <label class="form-check-label checkbox-label" for="consent">
-            I hereby confirm that patient details have been removed from the case file and/or shared with patient’s
-            consent.
-          </label>
-        </div>
-
-        <div class="mb-4 form-check">
-          <input type="checkbox" class="form-check-input" name="DataRelevant" id="dataRelevant">
-          <label class="form-check-label checkbox-label" for="dataRelevant">
-            The data entered is relevant to platform.
-          </label>
-        </div>
-
-        <!-- Upload Button -->
-        <button type="submit" class="upload-btn">UPLOAD</button>
-      </form>
+      <form 
+      name="case-form" 
+      method="POST" 
+      data-netlify="true" 
+      enctype="multipart/form-data" 
+      id="case-form" 
+      class="mt-4"
+    >
+      <!-- Netlify requires this hidden input -->
+      <input type="hidden" name="form-name" value="case-form" />
+    
+      <!-- Name -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Add Name..." required>
+      </div>
+    
+      <!-- Title -->
+      <div class="mb-3">
+        <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" name="Title" id="title" placeholder="Add Title..." required>
+      </div>
+    
+      <!-- Speciality -->
+      <div class="mb-3">
+        <label for="speciality" class="form-label">Speciality <span class="text-danger">*</span></label>
+        <select class="form-select" name="Speciality" id="speciality" required>
+          <option selected disabled>Select Speciality</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Orthopedics">Orthopedics</option>
+        </select>
+      </div>
+    
+      <!-- Description -->
+      <div class="mb-3">
+        <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
+        <textarea class="form-control" name="Description" id="description" rows="4" placeholder="Enter Description" required></textarea>
+      </div>
+    
+      <!-- Attachments -->
+      <div class="mb-3">
+        <label class="form-label">Attachments <span class="text-danger">*</span></label><br>
+        <input type="file" name="Attachment" required>
+      </div>
+    
+      <!-- Checkboxes -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" name="Consent" id="consent" required>
+        <label class="form-check-label checkbox-label" for="consent">
+          I hereby confirm that patient details have been removed from the case file and/or shared with patient’s consent.
+        </label>
+      </div>
+    
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" name="DataRelevant" id="dataRelevant" required>
+        <label class="form-check-label checkbox-label" for="dataRelevant">
+          The data entered is relevant to platform.
+        </label>
+      </div>
+    
+      <!-- Upload Button -->
+      <button type="submit" class="upload-btn">UPLOAD</button>
+    </form>
+    
 
     </div>
 
