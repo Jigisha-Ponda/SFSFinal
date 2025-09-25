@@ -428,67 +428,72 @@
 
       </form> -->
 
-      <form action="https://formspree.io/f/mgvnvkoy" method="POST" class="mt-4">
+      <form id="case-form" class="mt-4">
+
         <!-- Name -->
         <div class="mb-3">
           <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="name" id="name" placeholder="Add Name...">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Add Name..." required>
         </div>
-
+      
         <!-- Title -->
         <div class="mb-3">
           <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="Title" id="title" placeholder="Add Title...">
+          <input type="text" class="form-control" name="title" id="title" placeholder="Add Title..." required>
         </div>
-
+      
         <!-- Speciality -->
         <div class="mb-3">
           <label for="speciality" class="form-label">Speciality <span class="text-danger">*</span></label>
-          <select class="form-select" name="Speciality" id="speciality">
+          <select class="form-select" name="speciality" id="speciality" required>
             <option selected disabled>Select Speciality</option>
             <option value="Cardiology">Cardiology</option>
             <option value="Neurology">Neurology</option>
             <option value="Orthopedics">Orthopedics</option>
           </select>
         </div>
-
+      
         <!-- Description -->
         <div class="mb-3">
           <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
-          <textarea class="form-control" name="Description" id="description" rows="4"
-            placeholder="Enter Description"></textarea>
+          <textarea class="form-control" name="description" id="description" rows="4"
+            placeholder="Enter Description" required></textarea>
         </div>
-
+      
         <!-- Attachments -->
         <!-- <div class="mb-3">
           <label class="form-label">Attachments <span class="text-danger">*</span></label><br>
-          <input type="file" name="Attachment">
+          <input type="file" name="attachment" id="attachment" required>
         </div> -->
-
-        <div class="mb-3">
+      
+        <!-- <div class="mb-3">
           <label for="fileURL" class="form-label">File URL <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" name="fileURL" id="fileURL" placeholder="Paste Google Drive file URL here" required>
+          <input type="text" class="form-control" name="fileURL" id="fileURL" placeholder="Paste file URL here" required>
+        </div> -->
+        <div class="mb-3">
+          <label class="form-label">Attachment <span class="text-danger">*</span></label><br>
+          <input type="file" class="form-control" name="attachment" id="attachment" required>
+          <div id="fileError" style="color:red; font-size:14px; display:none;">File size must be less than 30 KB</div>
         </div>
-
         <!-- Checkboxes -->
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" name="Consent" id="consent">
+          <input type="checkbox" class="form-check-input" name="consent" id="consent" required>
           <label class="form-check-label checkbox-label" for="consent">
-            I hereby confirm that patient details have been removed from the case file and/or shared with patient’s
-            consent.
+            I hereby confirm that patient details have been removed from the case file and/or shared with patient’s consent.
           </label>
         </div>
-
+      
         <div class="mb-4 form-check">
-          <input type="checkbox" class="form-check-input" name="DataRelevant" id="dataRelevant">
+          <input type="checkbox" class="form-check-input" name="dataRelevant" id="dataRelevant" required>
           <label class="form-check-label checkbox-label" for="dataRelevant">
             The data entered is relevant to platform.
           </label>
         </div>
-
+      
         <!-- Upload Button -->
         <button type="submit" class="upload-btn">UPLOAD</button>
       </form>
+      
 
     </div>
 
@@ -736,6 +741,45 @@
       checkDevice();
     });
   </script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("-wcobjquLE5Z6TytS"); // Replace with your EmailJS public key
+  })();
+
+    document.getElementById("case-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fileInput = document.getElementById("attachment"); // your file input
+    const file = fileInput?.files[0]; // get the first file
+    const fileErrorId = "fileError";
+
+    // Remove previous error message if exists
+    let existingError = document.getElementById(fileErrorId);
+    if (existingError) existingError.remove();
+
+    // Check file size if a file is selected
+    if (file && file.size > 30 * 1024) { // 30 KB
+      const errorMsg = document.createElement("div");
+      errorMsg.id = fileErrorId;
+      errorMsg.style.color = "red";
+      errorMsg.style.fontSize = "14px";
+      errorMsg.style.marginTop = "5px";
+      errorMsg.textContent = "File size must be less than 30 KB";
+      fileInput.parentNode.appendChild(errorMsg);
+      return; // stop submission
+    }
+
+    // Send form data with EmailJS
+    emailjs.sendForm("service_xugbb0j", "template_14d481c", this)
+      .then(function () {
+        alert("Form submitted successfully!");
+        document.getElementById("case-form").reset(); // optional: reset form
+      }, function (error) {
+        alert("Failed to send form: " + error.text);
+      });
+  });
+</script>
 
   <script>
     // Smooth scroll
