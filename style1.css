@@ -211,7 +211,7 @@ html, body {
 
 .speaker-desc {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size:15px;
+  font-size:17px;
   /* Same size for all */
   line-height: 1.4;
   color: #000;
@@ -387,6 +387,22 @@ html, body {
   font-weight: 500;
   padding: 0px 20px;
 }
+.footer h6{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color:rgba(25, 63, 111, 1);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color:rgba(25, 63, 111, 1);
+  font-size: 18px;
+}
 /* Responsive: Two in a row for large, one in a row for mobile */
 @media (min-width: 767px) {
   .row {
@@ -508,7 +524,7 @@ html, body {
 }
 
 .hero-banner-yellow-line {
-  width: 60%;
+  width: 80%;
   height: 4px;
   background-color: yellow;
   margin: 0 auto;
