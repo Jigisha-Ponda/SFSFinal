@@ -261,6 +261,9 @@ body {
 .social-icons{
   height:130px;
 }
+.download-box a{
+  color:transparent!important;
+}
 /* Responsive Tweaks */
 @media (max-width: 576px) {
   .custom-card {
