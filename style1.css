@@ -396,6 +396,10 @@ html, body {
 }
 
 @media (max-width: 767px) {
+  .download-box{
+    min-height: 10px;
+    height:auto!important;
+  }
   .member-card {
     flex-direction: column;
     text-align: center;
