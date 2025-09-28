@@ -430,6 +430,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  .hero-banner-text-area{
+    height:auto!important;
+  }
+  .hero-banner-yellow-line{
+    width: 100%;
+  }
   .card-content {
     min-height: 106.7px;
   }
