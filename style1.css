@@ -258,7 +258,9 @@ body {
 .sfs-logo {
   height: 65px;
 }
-
+.social-icons{
+  height:130px;
+}
 /* Responsive Tweaks */
 @media (max-width: 576px) {
   .custom-card {
@@ -430,6 +432,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .download-box{
+    display: flex;
+    flex-direction: column;
+  }
   .hero-banner-text-area{
     height:auto!important;
   }
