@@ -15,14 +15,14 @@ export default async function handler(req, res) {
       // Configure Nodemailer
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
-        port: process.env.SMTP_PORT,
-        secure: false,
+        port: parseInt(process.env.SMTP_PORT),
+        secure: false, // use true if port 465
         auth: {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
         },
       });
-
+      
       const mailOptions = {
         from: `"${name}" <${process.env.SMTP_USER}>`,
         to: "jigishaadatiya21@gmail.com", // your email
