@@ -1,6 +1,12 @@
 // api/sendEmail.js
 import nodemailer from "nodemailer";
 
+export const config = {
+    api: {
+      bodyParser: true, // parses JSON automatically
+    },
+  };
+
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
