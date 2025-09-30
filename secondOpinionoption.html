@@ -778,7 +778,7 @@
       const res = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: formData,
+        body: JSON.stringify(data),
       });
 
       const result = await res.json();
