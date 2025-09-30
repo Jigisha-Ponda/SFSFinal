@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
       const mailOptions = {
         from: `"${name}" <${process.env.SMTP_USER}>`,
-        to: "recipient@example.com", // your email
+        to: "jigishaadatiya21@gmail.com", // your email
         subject: `New Case Uploaded: ${title}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>
