@@ -1,22 +1,74 @@
+// // api/sendEmail.js
+// import nodemailer from "nodemailer";
+
+// export const config = {
+//     api: {
+//       bodyParser: true, // parses JSON automatically
+//     },
+//   };
+
+// export default async function handler(req, res) {
+//   if (req.method === "POST") {
+//     try {
+//       const { name, title, speciality, description, consent, dataRelevant } = req.body;
+
+//       // Configure Nodemailer
+//       const transporter = nodemailer.createTransport({
+//         host: process.env.SMTP_HOST,
+//         port: parseInt(process.env.SMTP_PORT),
+//         secure: false, // use true if port 465
+//         auth: {
+//           user: process.env.SMTP_USER,
+//           pass: process.env.SMTP_PASS,
+//         },
+//       });
+
+//       const mailOptions = {
+//         from: `"${name}" <${process.env.SMTP_USER}>`,
+//         to: "jigishaadatiya21@gmail.com", // your email
+//         subject: `New Case Uploaded: ${title}`,
+//         html: `
+//           <p><strong>Name:</strong> ${name}</p>
+//           <p><strong>Title:</strong> ${title}</p>
+//           <p><strong>Speciality:</strong> ${speciality}</p>
+//           <p><strong>Description:</strong> ${description}</p>
+//           <p><strong>Consent:</strong> ${consent}</p>
+//           <p><strong>Data Relevant:</strong> ${dataRelevant}</p>
+//         `,
+//       };
+
+//       await transporter.sendMail(mailOptions);
+//       return res.status(200).json({ message: "Email sent successfully" });
+//     } catch (error) {
+//       console.error(error);
+//       return res.status(500).json({ message: "Error sending email", error });
+//     }
+//   } else {
+//     res.setHeader("Allow", ["POST"]);
+//     return res.status(405).end(`Method ${req.method} Not Allowed`);
+//   }
+// }
+
+
 // api/sendEmail.js
 import nodemailer from "nodemailer";
 
 export const config = {
-    api: {
-      bodyParser: true, // parses JSON automatically
-    },
-  };
+  api: {
+    bodyParser: true, // keep JSON parsing enabled
+  },
+};
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
-      const { name, title, speciality, description, consent, dataRelevant } = req.body;
+      const { name, title, speciality, description, consent, dataRelevant, attachment } = req.body;
 
       // Configure Nodemailer
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: parseInt(process.env.SMTP_PORT),
-        secure: false, // use true if port 465
+        secure: false, // true if port 465
         auth: {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
@@ -35,6 +87,14 @@ export default async function handler(req, res) {
           <p><strong>Consent:</strong> ${consent}</p>
           <p><strong>Data Relevant:</strong> ${dataRelevant}</p>
         `,
+        attachments: attachment
+          ? [
+              {
+                filename: attachment.filename,
+                content: Buffer.from(attachment.content, "base64"),
+              },
+            ]
+          : [],
       };
 
       await transporter.sendMail(mailOptions);
