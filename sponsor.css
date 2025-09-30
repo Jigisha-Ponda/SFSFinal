@@ -73,6 +73,10 @@ body {
   z-index: 1;
 }
 
+.icon img{
+  width: 50px;
+}
+
 .logo-text {
   font-family: "Barlow Condensed", sans-serif !important;
   font-size: 22px !important;
@@ -192,6 +196,35 @@ body {
 }
 
 @media(max-width:767px) {
+  .feature-head {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgba(25, 63, 111, 1);
+  }
+  .feature-content{
+    font-size:20px!important;
+  }
+  .icon {
+    background: rgba(246, 242, 241, 1) !important;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .icon img{
+    width: 30px;
+  }
   .logo-text {
     font-size: 18px !important;
   }
@@ -206,5 +239,37 @@ body {
 
   .sponsor-form-heading {
     width: 90%;
+  }
+}
+
+@media(min-width:768px) and (max-width:992px){
+  .feature-head {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: rgba(25, 63, 111, 1);
+  }
+  .feature-content{
+    font-size:24px!important;
+  }
+  .icon {
+    background: rgba(246, 242, 241, 1) !important;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .icon img{
+    width: 40px;
   }
 }
