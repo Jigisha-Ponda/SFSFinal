@@ -120,7 +120,7 @@
       </h2>
 
       <div class="container my-5">
-        <div class="row g-4 mt-5">
+        <div class="row d-flex flex-row justify-content-center g-4 mt-5">
 
           <!-- Card 1 -->
           <div class="col-lg-4 col-md-6 d-flex mt-5 pt-5 pt-lg-0">
@@ -176,7 +176,7 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="col-lg-4 col-md-6 d-flex mt-5 pt-5">
+          <div class="col-lg-4 col-md-6 d-flex mx-5 mt-5 pt-5">
             <div class="feature-card h-100 w-100 text-center p-4">
               <div class="icon">
                 <img src="sponsorimg/mentorship.png" alt="Mentorship" style="width: 50px;">
@@ -194,7 +194,7 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="col-lg-4 col-md-6 d-flex mt-5 pt-5">
+          <div class="col-lg-4 col-md-6 d-flex mx-5 mt-5 pt-5">
             <div class="feature-card h-100 w-100 text-center p-4">
               <div class="icon">
                 <img src="sponsorimg/health-care-2.png" alt="Beyond Operating Room" style="width: 50px;">
@@ -495,10 +495,10 @@
         this.classList.add('active');
       });
     });
-  
+
     emailjs.init("CJojGx6EwiRabaLpu");
     const form = document.getElementById("sponsor-form");
-  
+
     // Fields with corresponding error IDs
     const fields = [
       { id: "name", error: "name-error" },
@@ -510,7 +510,7 @@
       { id: "source", error: "source-error" },
       { id: "comments", error: "comments-error" }
     ];
-  
+
     // Hide error on input or change
     fields.forEach(f => {
       const field = document.getElementById(f.id);
@@ -524,15 +524,15 @@
         });
       }
     });
-  
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-  
+
       // Hide all previous errors
       document.querySelectorAll(".text-danger").forEach(el => el.classList.add("d-none"));
-  
+
       let isValid = true;
-  
+
       // Validate required fields
       fields.forEach(f => {
         const value = document.getElementById(f.id).value.trim();
@@ -541,9 +541,9 @@
           document.getElementById(f.error).classList.remove("d-none");
         }
       });
-  
+
       if (!isValid) return; // Stop submission if invalid
-  
+
       // Prepare form data
       const formData = {
         name: document.getElementById("name").value,
@@ -555,7 +555,7 @@
         source: document.getElementById("source")?.value || "",
         comments: document.getElementById("comments")?.value || ""
       };
-  
+
       emailjs.send("service_xugbb0j", "template_jjzbekb", formData)
         .then(() => {
           alert("Email sent successfully!");
@@ -567,7 +567,7 @@
         });
     });
   </script>
-  
+
 
 
   <!-- Template Javascript -->
