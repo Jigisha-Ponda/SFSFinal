@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
       const mailOptions = {
         from: `"Surgeons for Surgeons" <surgeonsforsurgeons@gmail.com>`, // Gmail sender
-        to: "jigishaadatiya21@gmail.com", // Receiver (your support inbox)
+        to: "support@surgeonsforsurgeons.com", // Receiver (your support inbox)
         subject: `New Case Uploaded: ${title}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>
