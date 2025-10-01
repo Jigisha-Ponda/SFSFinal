@@ -9,7 +9,11 @@
   --light: #f0e4de;
   --dark: #181d38;
 }
-
+a {
+  text-decoration: none;  
+  color: inherit;       
+  cursor: pointer;
+}
 #one {
   background: linear-gradient(135deg, #065bbb, #9fa6f5, #e8aff4, #bdf6f0, #64f187, #c7b3f5);
   background-size: 400% 400%;
@@ -1339,15 +1343,16 @@ h2 {
   font-weight: bold;
 }
 
+
 .nav-link.active {
   color: #193f6f !important;
   /* Change to your highlight color */
   font-weight: bold;
   /* Optional: make it bold */
   border-bottom: 2px solid #193f6f;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   /* Optional underline effect */
 }
-
 
 @media (max-width: 768px) {
 

@@ -9,6 +9,12 @@ body {
   /* prevent horizontal scroll */
 }
 
+a {
+  text-decoration: none;  
+  color: inherit;       
+  cursor: pointer;
+}
+
 /* Navbar */
 .navbar {
   background-color: #CDE7F7;
@@ -436,7 +442,7 @@ body {
 
 @media (max-width: 767px) {
   .hero-banner-text{
-    font-size: 30px!important;
+    font-size: 16px!important;
   }
   .download-box{
     display: flex;
@@ -533,12 +539,14 @@ body {
   font-weight: bold;
 }
 
+
 .nav-link.active {
   color: #193f6f !important;
   /* Change to your highlight color */
   font-weight: bold;
   /* Optional: make it bold */
   border-bottom: 2px solid #193f6f;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   /* Optional underline effect */
 }
 
@@ -548,14 +556,15 @@ body {
 }
 
 .hero-banner-text-area {
-  background: rgba(238, 235, 235, 0.2);
+  /* background: rgba(238, 235, 235, 0.2); */
+  /* background-image: url('sfsimg/hero-banner.png'); */
   border-radius: 8px;
   width: 80%;
   max-width: 1200px;
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 

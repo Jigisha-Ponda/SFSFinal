@@ -14,7 +14,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0">
+  <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top p-0">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand d-flex align-items-center">
         <img src="./sfsimg/logo.png" alt="Logo" class="sfs-logo">
@@ -39,16 +39,16 @@
   </nav>
   <div class="container-fluid p-0 position-relative">
     <!-- Background Image -->
-    <img class="img-fluid w-100" src="sfsimg/bg1.png" alt="img" class="hero-banner-img">
+    <img class="img-fluid w-100" src="sfsimg/hero-banner.png" alt="img" class="hero-banner-img">
     <!-- Text Block with Transparent Background -->
-    <div class="position-absolute top-50 start-50 translate-middle text-center px-6 py-5 hero-banner-text-area">
+    <div class="position-absolute top-50 start-50 translate-middle text-center px-6 pt-5 hero-banner-text-area">
       <h1 class="text-white fw-bold mb-2 mb-lg-3 hero-banner-text">
-        <i>Global Surgeons building next</i>
+        <i>The World’s Surgical Community,</i>
       </h1>
       <!-- Yellow line -->
       <div class="hero-banner-yellow-line">
       </div>
-      <h1 class="text-white fw-bold mb-0 mb-lg-3 mt-1 mt-lg-2 hero-banner-text"><i>generation of world class Surgeons</i></h1>
+      <h1 class="text-white fw-bold mb-0 mb-lg-3 mt-1 mt-lg-2 hero-banner-text"><i>Together in One Place.</i></h1>
     </div>
   </div>
   <!-- Download App Section -->
@@ -92,17 +92,17 @@
     <div class="container">
       <div class="row">
         <!-- Upcoming -->
-        <div class="col-12 mb-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="col-lg-6 mb-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
           <!-- Icon + Text -->
           <div class="row d-flex flex-lg-row align-items-center">
-            <div class="col-lg-1">
-              <div class="me-md-3 text-center text-md-start mb-3 mb-md-0 d-flex flex-column align-items-center">
+            <div class="col-md-3">
+              <div class="text-center text-md-start mb-3 mb-md-0 d-flex flex-column align-items-center">
                 <div class="soon-masterclass-icon">
                 </div>
                 <p class="fw-bold fs-5 mt-2 mb-0 soon-masterclass-text">SOON</p>
               </div>
             </div>
-            <div class="col-lg-11">
+            <div class="col-md-9">
               <!-- Image -->
               <img src="sfsimg/upcoming_master_class.png" alt="Upcoming Masterclass"
                 class="img-fluid rounded shadow masterclass-image">
@@ -111,16 +111,16 @@
         </div>
 
         <!-- Previous -->
-        <div class="col-12 mb-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="col-lg-6 mb-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
           <!-- Icon + Text -->
           <div class="row d-flex flex-lg-row align-items-center">
-            <div class="col-lg-1">
-              <div class="me-md-3 text-center text-md-start mb-3 mb-md-0 d-flex flex-column align-items-center">
+            <div class="col-md-3">
+              <div class="text-center text-md-start mb-3 mb-md-0 d-flex flex-column align-items-center">
                 <img src="sfsimg/icomoon-free_previous.png" alt="Previous Icon" class="previous-masterclass-icon">
                 <p class="fw-bold fs-5 mt-2 mb-0 previous-masterclass-text">PREVIOUS</p>
               </div>
             </div>
-            <div class="col-lg-11">
+            <div class="col-md-9">
               <!-- Image -->
               <img src="sfsimg/previous_masterclass.png" alt="Previous Masterclass"
                 class="img-fluid rounded shadow masterclass-image">
@@ -258,7 +258,7 @@
     </div>
   </div>
 
-  <div class="members-container">
+  <div class="members-container" id="featured-members">
     <div class="row">
       <h1 class="members-title">OUR FEATURED MEMBERS</h1>
       <!-- Member 1 -->
@@ -556,39 +556,48 @@
         <!-- Column 1 -->
         <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
           <h6 class="fw-bold">About</h6>
-          <p class="mb-1">Featured Surgeons</p>
-          <p class="mb-1">Join Community</p>
+          <p class="mb-1">
+            <a href="index.html#featured-members">Featured Surgeons</a></p>
+          <!-- <p class="mb-1">Join Community</p>
           <p class="mb-1">Become Mentor</p>
-          <p class="mb-1">Success Stories</p>
-          <p class="mb-1">Socials</p>
-          <p class="mb-1">Contact Us</p>
+          <p class="mb-1">Success Stories</p> -->
+          <p class="mb-1">
+            <a href="https://www.linkedin.com/company/surgeons-for-surgeons-sfs/">Socials</a>
+          </p>
+          <p class="mb-1">
+            <a href="">Contact Us</a>
+          </p>
         </div>
 
         <!-- Column 2 -->
         <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
           <h6 class="fw-bold">Services</h6>
-          <p class="mb-1">Second Opinion</p>
-          <p class="mb-1">Masterclass</p>
+          <p class="mb-1">
+            <a href="secondopinion.html">Second Opinion</a>
+          </p>
+          <!-- <p class="mb-1">Masterclass</p>
           <p class="mb-1">Programs</p>
           <p class="mb-1">Video Tutorials</p>
           <p class="mb-1">Surgeon Directory</p>
           <p class="mb-1">Trainee Mentorship</p>
-          <p class="mb-1">Peer Consultation</p>
+          <p class="mb-1">Peer Consultation</p> -->
         </div>
 
         <!-- Column 3 -->
         <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
           <h6 class="fw-bold">Resources</h6>
-          <p class="mb-1">Support</p>
+          <!-- <p class="mb-1">Support</p>
           <p class="mb-1">Help Center</p>
-          <p class="mb-1">Training Materials</p>
-          <p class="mb-1">Case Studies</p>
-          <p class="mb-1">Research Hub</p>
-          <p class="mb-1">Medical Guidelines</p>
+          <p class="mb-1">Training Materials</p> -->
+          <p class="mb-1">
+            <a href="secondopinion.html#case-studies">Case Studies</a>
+          </p>
+          <!-- <p class="mb-1">Research Hub</p>
+          <p class="mb-1">Medical Guidelines</p> -->
         </div>
 
         <!-- Column 4 -->
-        <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+        <!-- <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
           <h6 class="fw-bold">Partnerships</h6>
           <p class="mb-1">Sponsor Masterclass</p>
           <p class="mb-1">Corporate Partners</p>
@@ -596,18 +605,21 @@
           <p class="mb-1">Equipment Showcase</p>
           <p class="mb-1">Media Kit</p>
           <p class="mb-1">Business Inquiries</p>
-        </div>
+        </div> -->
 
         <!-- Column 5 -->
         <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
           <h6 class="fw-bold">Quality & Compliance</h6>
-          <p class="mb-1">Privacy Policy</p>
-          <p class="mb-1">Terms of Service</p>
-          <p class="mb-1">Copyrights</p>
+          <p class="mb-1">
+            <a href="">Privacy Policy</a>
+          </p>
+          <p class="mb-1">
+            <a href="">Terms of Service</a></p>
+          <!-- <p class="mb-1">Copyrights</p>
           <p class="mb-1">Medical Disclaimer</p>
           <p class="mb-1">Professional Licensing</p>
           <p class="mb-1">Security Standards</p>
-          <p class="mb-1">Cookie Preferences</p>
+          <p class="mb-1">Cookie Preferences</p> -->
         </div>
 
       </div>
