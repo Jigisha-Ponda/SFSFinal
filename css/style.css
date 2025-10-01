@@ -14,6 +14,10 @@ a {
   color: inherit;       
   cursor: pointer;
 }
+a:hover{
+  text-decoration: none;
+  color:inherit;
+}
 #one {
   background: linear-gradient(135deg, #065bbb, #9fa6f5, #e8aff4, #bdf6f0, #64f187, #c7b3f5);
   background-size: 400% 400%;
