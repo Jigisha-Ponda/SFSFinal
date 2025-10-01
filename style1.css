@@ -15,6 +15,10 @@ a {
   cursor: pointer;
 }
 
+a:hover{
+  color:inherit;
+}
+
 /* Navbar */
 .navbar {
   background-color: #CDE7F7;
