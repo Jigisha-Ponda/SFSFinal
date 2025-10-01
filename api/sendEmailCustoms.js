@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export const config = {
   api: {
-    bodyParser: true,
+    bodyParser: true, // keep JSON parsing enabled
   },
 };
 
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: parseInt(process.env.SMTP_PORT),
-        secure: false,
+        secure: false, // true if port 465
         auth: {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
@@ -24,8 +24,8 @@ export default async function handler(req, res) {
       });
 
       const mailOptions = {
-        from: `"Surgeons for Surgeons" <surgeonsforsurgeons@gmail.com>`, // Gmail sender
-        to: "support@surgeonsforsurgeons.com", // Receiver (your support inbox)
+        from: `"${name}" <${process.env.SMTP_USER}>`,
+        to: "jigishaadatiya21@gmail.com", // your email
         subject: `New Case Uploaded: ${title}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>
