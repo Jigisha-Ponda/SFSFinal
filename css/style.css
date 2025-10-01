@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /********** Template CSS **********/
 :root {
@@ -9,15 +10,18 @@
   --light: #f0e4de;
   --dark: #181d38;
 }
+
 a {
-  text-decoration: none;  
-  color: inherit;       
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
+
 #one {
   background: linear-gradient(135deg, #065bbb, #9fa6f5, #e8aff4, #bdf6f0, #64f187, #c7b3f5);
   background-size: 400% 400%;
