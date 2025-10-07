@@ -414,9 +414,17 @@ a:hover {
 
 .modal-btn {
   background-color: #193F6F;
+  color:#fff;
   border-radius: 10px;
   padding: 10px 20px;
+  border:none;
 }
+
+.modal-btn:hover{
+  background-color: #193F6F;
+  color:#fff;
+}
+
 
 .modal-title {
   font-family: 'Barlow Condensed', sans-serif;

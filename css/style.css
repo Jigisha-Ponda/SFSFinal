@@ -122,11 +122,21 @@ a:hover {
   color: #193f6f !important;
 }
 
-.open-app,.modal-btn{
+.open-app,
+.modal-btn {
   background-color: #193F6F;
+  color:#fff!important;
+  font-weight: 400!important;
   border-radius: 10px;
   padding: 10px 20px;
+  border:none;
 }
+
+.modal-btn:hover{
+  background-color: #193F6F;
+  color:#fff!important;
+}
+
 
 .modal-title {
   font-family: 'Barlow Condensed', sans-serif;
