@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="contact-us.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top p-0">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="./sfsimg/logo.png" alt="Logo" class="sfs-logo">
+                <span class="ms-2 text-uppercase logo-text">
+                    Surgeons <span>For</span> Surgeons
+                </span>
+
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="secondopinion.html" class="nav-link">Second Opinion</a></li>
+                    <li class="nav-item"><a href="Sponsor.html" class="nav-link">Sponsor</a></li>
+                    <!-- <li class="nav-item"><a href="#help" class="nav-link">Trainee Surgeons</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">About Us</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form start -->
+
+    <div class="mt-5 pt-5" style="background-color:#4AC7E9; padding-top: 30px; padding-bottom: 30px;">
+        <div class="form-title" style="box-shadow:  0px 4px 10px rgba(12, 12, 13, 0.4);">Get in Touch With Our Care Team
+        </div>
+
+        <div class="form-container mx-auto" style="border-radius: 10px;">
+            <form name="contact-form" id="contact-form" class="mt-4 px-5 mx-auto">
+                <!-- Netlify requires this hidden input -->
+                <input type="hidden" name="form-name" value="contact-form" />
+
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Add Name..." required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Add Email..." required>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Add Phone Number..."
+                        required>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message/Query <span class="text-danger">*</span></label>
+                    <textarea class="form-control" name="message" id="message" rows="4"
+                        placeholder="Enter Message/Query" required></textarea>
+                </div>
+
+                <!-- Upload Button -->
+                <button type="submit" class="upload-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Form End -->
+
+    <div class="container-fluid footer" style="background-color: #b9dcf5; padding: 40px 0;">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center text-md-start">
+
+                <!-- Column 0 (Logo Column) -->
+                <!-- <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center align-items-center">
+              <img src="sfsimg/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+    
+            </div> -->
+
+                <!-- Column 1 -->
+                <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+                    <h6 class="fw-bold">About</h6>
+                    <p class="mb-1">
+                        <a href="index.html#featured-members">Featured Surgeons</a>
+                    </p>
+                    <!-- <p class="mb-1">Join Community</p>
+              <p class="mb-1">Become Mentor</p>
+              <p class="mb-1">Success Stories</p> -->
+                    <p class="mb-1">
+                        <a href="https://www.linkedin.com/company/surgeons-for-surgeons-sfs/">
+                            <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </p>
+                    <p class="mb-1">
+                        <a href="contact-us.html">Contact Us</a>
+                    </p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+                    <h6 class="fw-bold">Services</h6>
+                    <p class="mb-1">
+                        <a href="secondopinion.html">Second Opinion</a>
+                    </p>
+                    <!-- <p class="mb-1">Masterclass</p>
+              <p class="mb-1">Programs</p>
+              <p class="mb-1">Video Tutorials</p>
+              <p class="mb-1">Surgeon Directory</p>
+              <p class="mb-1">Trainee Mentorship</p>
+              <p class="mb-1">Peer Consultation</p> -->
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+                    <h6 class="fw-bold">Resources</h6>
+                    <!-- <p class="mb-1">Support</p>
+              <p class="mb-1">Help Center</p>
+              <p class="mb-1">Training Materials</p> -->
+                    <p class="mb-1">
+                        <a href="secondopinion.html#case-studies">Case Studies</a>
+                    </p>
+                    <!-- <p class="mb-1">Research Hub</p>
+              <p class="mb-1">Medical Guidelines</p> -->
+                </div>
+
+                <!-- Column 4 -->
+                <!-- <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+              <h6 class="fw-bold">Partnerships</h6>
+              <p class="mb-1">Sponsor Masterclass</p>
+              <p class="mb-1">Corporate Partners</p>
+              <p class="mb-1">Event Sponsorship</p>
+              <p class="mb-1">Equipment Showcase</p>
+              <p class="mb-1">Media Kit</p>
+              <p class="mb-1">Business Inquiries</p>
+            </div> -->
+
+                <!-- Column 5 -->
+                <div class="col-6 col-md-4 col-lg-2" style="font-family: Roboto Condensed;">
+                    <h6 class="fw-bold">Quality & Compliance</h6>
+                    <p class="mb-1">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </p>
+                    <p class="mb-1">
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </p>
+                    </p>
+                    <!-- <p class="mb-1">Copyrights</p>
+              <p class="mb-1">Medical Disclaimer</p>
+              <p class="mb-1">Professional Licensing</p>
+              <p class="mb-1">Security Standards</p>
+              <p class="mb-1">Cookie Preferences</p> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // ===== Helper to convert file to Base64 (optional, not used in contact form) =====
+            function toBase64(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => resolve(reader.result.split(",")[1]);
+                    reader.onerror = reject;
+                });
+            }
+
+            // ===== Contact Form Submission =====
+            const contactForm = document.getElementById("contact-form");
+
+            if (contactForm) {
+                contactForm.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(contactForm);
+
+                    // Prepare data to send
+                    const data = {
+                        formType: "contact", // tells the API this is a contact form
+                        name: formData.get("name"),
+                        email: formData.get("email"),
+                        phone: formData.get("phone"),
+                        message: formData.get("message"),
+                    };
+
+                    try {
+                        const res = await fetch("/api/sendEmail", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(data),
+                        });
+
+                        const result = await res.json();
+                        alert(result.message || "Contact form submitted successfully!");
+                        contactForm.reset();
+                    } catch (err) {
+                        console.error(err);
+                        alert("Error submitting c form");
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>
