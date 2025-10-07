@@ -17,7 +17,8 @@ h4 {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-h5,h6 {
+h5,
+h6 {
     color: #000;
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -39,7 +40,8 @@ a {
     color: #193F6F;
     text-decoration: none;
 }
-.terms-of-service p{
+
+.terms-of-service p {
     color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
@@ -182,6 +184,136 @@ a {
     color: #193F6F !important;
 }
 
+/* Form */
+.form-container {
+    max-width: 600px;
+    /* margin: auto; */
+    background-color: transparent;
+    /* padding: 20px; */
+    background-color: #4AC7E9;
+}
+
+.form-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #004A7F;
+    /* Dark blue header */
+    color: white;
+    padding: 7px 50px 7px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form-label {
+    color: #193F6F;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form-check-label {
+    color: #193F6F !important;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px !important;
+    font-weight: 400;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border: 2px solid #193f6f !important;
+    box-shadow: 0 0 0 .25rem #193f6f;
+}
+
+.browse-btn {
+    background-color: #FAD802;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-check-input {
+    height: 30px;
+    width: 50px;
+    border: 2px solid #193F6F;
+    border-radius: 5px;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.form-check-input-2 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #193F6F;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.star {
+    color: #ff0000;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    /* vertically align checkbox & text */
+    gap: 10px;
+    /* space between checkbox and text */
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    /* remove default spacing */
+}
+
+.form-check-input:checked {
+    background-color: #193f6f;
+    border-color: #193f6f;
+}
+
+.add-file-btn {
+    background: linear-gradient(to right, #0059B2, #2B82E1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.upload-btn {
+    background: linear-gradient(to right, #003F73, #2B82E1);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.checkbox-label {
+    font-size: 0.9rem;
+    color: #002D40;
+}
+
+.modal-btn {
+    background-color: #193F6F;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.modal-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #193F6F;
+}
+
+/* Form css end */
 
 @media (max-width: 768px) {
     .logo-text {

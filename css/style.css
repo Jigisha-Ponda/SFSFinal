@@ -122,10 +122,17 @@ a:hover {
   color: #193f6f !important;
 }
 
-.open-app {
+.open-app,.modal-btn{
   background-color: #193F6F;
   border-radius: 10px;
   padding: 10px 20px;
+}
+
+.modal-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #193F6F;
 }
 
 /*** Spinner ***/
@@ -1160,7 +1167,7 @@ h2 {
 .form-label {
   color: #193F6F;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
 }
 
