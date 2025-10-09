@@ -172,14 +172,13 @@ a:hover {
 }
 
 .sponsor-hero-section span {
-  /* margin-left: 17px; */
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .sponsor-hero-section h2 {
   color: rgba(25, 63, 111, 1);
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 46px;
+  font-size: 44px;
   font-style: italic;
 }
 
@@ -190,6 +189,10 @@ a:hover {
   /* controls overall indentation */
 }
 
+.custom-list li {
+  list-style-position: outside;
+  padding-left: 13px; /* adjust spacing */
+}
 .custom-list li::marker {
   font-size: 1.5rem;
   /* size of bullet */
@@ -436,10 +439,14 @@ a:hover {
 /* Form css end */
 
 @media(max-width:767px) {
+  .custom-list li {
+    list-style-position: outside;
+    padding-left: 8px; /* adjust spacing */
+  }
   .sponsor-hero-section h2 {
     color: rgba(25, 63, 111, 1);
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-style: italic;
   }
 
