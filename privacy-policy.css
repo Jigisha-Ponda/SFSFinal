@@ -301,6 +301,8 @@ a {
 }
 
 .modal-btn {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
     background-color: #193F6F;
     color: #fff;
     border-radius: 10px;

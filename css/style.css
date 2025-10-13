@@ -124,17 +124,18 @@ a:hover {
 
 .open-app,
 .modal-btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
   background-color: #193F6F;
-  color:#fff!important;
-  font-weight: 400!important;
+  color: #fff;
   border-radius: 10px;
   padding: 10px 20px;
-  border:none;
+  border: none;
 }
 
-.modal-btn:hover{
+.modal-btn:hover {
   background-color: #193F6F;
-  color:#fff!important;
+  color: #fff !important;
 }
 
 
@@ -1164,12 +1165,12 @@ h2 {
 }
 
 .form-title {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   background-color: #004A7F;
   /* Dark blue header */
   color: white;
   padding: 7px 50px 7px 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   display: inline-block;
 }
@@ -1177,7 +1178,7 @@ h2 {
 .form-label {
   color: #193F6F;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -1190,6 +1191,7 @@ h2 {
 
 .form-control,
 .form-select {
+  font-family: 'Barlow Condensed', sans-serif;
   border-radius: 8px;
   padding: 12px;
 }
@@ -1200,6 +1202,7 @@ h2 {
 }
 
 .browse-btn {
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #FAD802;
   padding: 10px 15px;
   border-radius: 10px;
@@ -1255,12 +1258,13 @@ h2 {
 }
 
 .upload-btn {
+  font-family: 'Barlow Condensed', sans-serif;
   background: linear-gradient(to right, #003F73, #2B82E1);
   color: white;
   border: none;
   padding: 12px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 100%;
   font-weight: bold;
 }
@@ -1516,7 +1520,7 @@ h2 {
 
 /* Text styling */
 .card-content h4 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px !important;
   font-weight: 600;
   color: #193F6F !important;
@@ -1598,7 +1602,7 @@ h2 {
 
 /* Text styling */
 .card-content h4 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #000;

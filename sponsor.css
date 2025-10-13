@@ -322,7 +322,7 @@ a:hover {
 .form-label {
   color: #193F6F;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -335,6 +335,7 @@ a:hover {
 
 .form-control,
 .form-select {
+  font-family: 'Barlow Condensed', sans-serif;
   border-radius: 8px;
   padding: 12px;
 }
@@ -416,6 +417,8 @@ a:hover {
 }
 
 .modal-btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
   background-color: #193F6F;
   color:#fff;
   border-radius: 10px;
