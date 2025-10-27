@@ -102,7 +102,7 @@ a:hover {
 
 /* Dark Blue Box for Heading */
 .download-box {
-  background-color: #0d3b66;
+  background-color: #193F6F;
   text-align: center;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .download-box {
-  background-color: #083b72;
+  background-color: #193F6F;
   /* dark blue bar */
   display: inline-block;
   padding: 20px 40px;
@@ -151,7 +151,7 @@ a:hover {
   width: 100%;
   height: 100px;
   /* height of the dark blue bar */
-  background-color: #083b72;
+  background-color: #193F6F;
   border-top: 3px solid #FAD802;
   border-bottom: 3px solid #FAD802;
   z-index: 1;
@@ -594,6 +594,9 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  .top-50{
+    top:70%!important;
+  }
   .hero-banner-text {
     font-size: 16px !important;
   }
@@ -730,6 +733,7 @@ a:hover {
   font-size: clamp(32px, 4vw, 50px);
   text-align: center;
   text-shadow: 2px 2px 4px #4AC7E9;
+  color:#193F6F;
 }
 
 .hero-banner-yellow-line {
@@ -746,7 +750,7 @@ a:hover {
 
 .masterclass-head {
   font-family: 'Barlow Condensed', sans-serif;
-  background-color: #062c5c;
+  background-color: #193F6F;
   color: #fff;
   border-radius: 5px;
   font-size: 30px;
@@ -863,7 +867,7 @@ a:hover {
   font-size: 18px;
   padding: 0 10px;
   margin: 0;
-  color: #062c5c;
+  color: #193F6F;
 }
 
 .btn-icon {
